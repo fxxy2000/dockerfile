@@ -1,4 +1,4 @@
-FROM wilsonzhou23/base:latest
+FROM wilsonzhou23/base-auto:latest
 LABEL MAINTAINER="wilson.hui.zhou@gmail.com"
 
 # Setup Environment

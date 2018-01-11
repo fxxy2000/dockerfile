@@ -1,4 +1,4 @@
-FROM wilsonzhou23/android:latest
+FROM wilsonzhou23/android-auto:latest
 LABEL MAINTAINER="wilson.hui.zhou@gmail.com"
 
 # Switch to user
