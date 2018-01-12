@@ -48,9 +48,7 @@ RUN (cp -R ${ANDROID_HOME} ${ANDROID_HOME}.tmp) && \
     (echo y | ${ANDROID_HOME}.tmp/tools/android update sdk --all --force --no-ui --filter tools) && \
     (rm -rf ${ANDROID_HOME}) && \
     (mv ${ANDROID_HOME}.tmp ${ANDROID_HOME})
-	
-ADD entrypoint.sh /home/jenkins/entrypoint.sh
-ENTRYPOINT ["/home/jenkins/entrypoint.sh"]
+
 
 
 
