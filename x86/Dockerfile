@@ -1,6 +1,11 @@
 FROM wilsonzhou23/android-auto:latest
 LABEL MAINTAINER="wilson.hui.zhou@gmail.com"
 
+ADD kvm.sh /kvm.sh
+RUN chmod +x /kvm.sh
+
+CMD /kvm.sh
+
 # Switch to user
 USER jenkins
 WORKDIR $HOME/workdir
@@ -10,3 +15,4 @@ ENV ANDROID_IMAGES_X86_FILTER   sys-img-x86-android-17,sys-img-x86-android-18,sy
 
 # Update Android SDK packages
 RUN (echo y | android update sdk --all --force --no-ui --filter ${ANDROID_IMAGES_X86_FILTER})
+
