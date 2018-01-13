@@ -2,8 +2,6 @@ FROM wilsonzhou23/android-auto:latest
 LABEL MAINTAINER="wilson.hui.zhou@gmail.com"
 
 ADD kvm.sh /kvm.sh
-RUN chmod +x /kvm.sh
-
 CMD /kvm.sh
 
 # Switch to user
