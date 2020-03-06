@@ -1,4 +1,4 @@
-FROM jenkins/jnlp-slave:latest
+FROM docker_thirdpart_local/jnlp-slave:alpine
 LABEL MAINTAINER="hui.zhou@mosi-tech.com"
 
 USER root
