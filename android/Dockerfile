@@ -31,8 +31,8 @@ RUN (mkdir -p ${HOME}/tools) && \
 
 # Setup Filter Environment
 ENV ANDROID_ESSENTIALS_FILTER   platform-tools
-ENV ANDROID_BUILD_TOOLS_FILTER  build-tools-25.0.2,build-tools-25.0.3,build-tools-26.0.2,build-tools-27.0.3
-ENV ANDROID_API_LEVELS_FILTER   android-15,android-16,android-17,android-18,android-19,android-21,android-22,android-23,android-24,android-25,android-26,android-27
+ENV ANDROID_BUILD_TOOLS_FILTER  build-tools-27.0.3
+ENV ANDROID_API_LEVELS_FILTER   android-21,android-27,android-28,android-29
 ENV ANDROID_EXTRAS_FILTER       extra-android-support,extra-google-m2repository,extra-android-m2repository,extra-google-google_play_services
 
 # Update Android SDK packages
